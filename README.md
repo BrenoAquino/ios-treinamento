@@ -1,7 +1,10 @@
 # Treinamento NATI 2018.2
 Projetos utilizados no treinamento de iOS do NATI
 
-### LayoutComponents
+### ComandosSwift.playground:
+Playground com comandos básicos e introdutórios da linguagem Swift.
+
+### LayoutComponents:
 Projeto de uma tela de Login simples com componentes básicos de layout. Apresentação dos componentes, outlets, actions e constraints.
 
 ### Ferramentas:
