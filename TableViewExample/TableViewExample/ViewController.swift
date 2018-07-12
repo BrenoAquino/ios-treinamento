@@ -10,11 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
-
-
 }
 
+// MARK: - TableView
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBasic", for: indexPath)
+        
+        cell.textLabel?.text = "Secton: \(indexPath.section) | Row: \(indexPath.row)"
+        
+        return cell
+    }
+}
