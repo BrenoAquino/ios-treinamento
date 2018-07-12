@@ -7,6 +7,9 @@ Playground com comandos básicos e introdutórios da linguagem Swift.
 ### LayoutComponents:
 Projeto de uma tela de Login simples com componentes básicos de layout. Apresentação dos componentes, outlets, actions e constraints.
 
+### TableViewExample:
+Projeto com a configuração de uma TableView simples. Foi utilizado uma cell default (basic) com uma label.
+
 ### Ferramentas:
 - Xcode: https://itunes.apple.com/br/app/xcode/id497799835?mt=12
 - Cocoapods: https://cocoapods.org
