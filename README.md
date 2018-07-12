@@ -1,6 +1,8 @@
 # Treinamento NATI 2018.2
-Projetos utilizados no treinamento de iOS do NATI
+## Introdução
+Durante o treinamento de desenvolvimento para iOS do NATI de 2018.2 foram criados diversos projetos. Esse repositório contém todos os projetos desenvolvidos no decorrer do treinamento.
 
+## Projetos
 ### ComandosSwift.playground:
 Playground com comandos básicos e introdutórios da linguagem Swift.
 
@@ -9,6 +11,9 @@ Projeto de uma tela de Login simples com componentes básicos de layout. Apresen
 
 ### TableViewExample:
 Projeto com a configuração de uma TableView simples. Foi utilizado uma cell default (basic) com uma label.
+
+## Referências
+Durante o treinamento foram utilizados diversos recursos. Os links dispostos abaixo fornecem mais informações sobre as ferramentas utilizadas, bibliotecas de terceiros recomendadas e links úteis (repositório com diversas bibliotecas, conjunto de exemplos de .gitignore para diversas linguagens, guia básico de swift e um playground online).
 
 ### Ferramentas:
 - Xcode: https://itunes.apple.com/br/app/xcode/id497799835?mt=12
