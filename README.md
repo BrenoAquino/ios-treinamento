@@ -4,7 +4,7 @@ Projetos utilizados no treinamento de iOS do NATI
 ### LayoutComponents
 Projeto de uma tela de Login simples com componentes básicos de layout. Apresentação dos componentes, outlets, actions e constraints.
 
-### Ferramentas
+### Ferramentas:
 - Xcode: https://itunes.apple.com/br/app/xcode/id497799835?mt=12
 - Cocoapods: https://cocoapods.org
 - Postman: https://www.getpostman.com/apps
