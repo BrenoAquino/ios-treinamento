@@ -12,6 +12,8 @@
 		551BE91420F623A100EE3A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551BE91220F623A100EE3A1D /* Main.storyboard */; };
 		551BE91620F623A300EE3A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551BE91520F623A300EE3A1D /* Assets.xcassets */; };
 		551BE91920F623A300EE3A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551BE91720F623A300EE3A1D /* LaunchScreen.storyboard */; };
+		55AB023E20F777FB004F3EE7 /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB023D20F777FB004F3EE7 /* DetalheViewController.swift */; };
+		55AB024020F789FC004F3EE7 /* DetalheSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB023F20F789FC004F3EE7 /* DetalheSenhaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		551BE91520F623A300EE3A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551BE91820F623A300EE3A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551BE91A20F623A300EE3A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AB023D20F777FB004F3EE7 /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
+		55AB023F20F789FC004F3EE7 /* DetalheSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheSenhaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				551BE90E20F623A100EE3A1D /* AppDelegate.swift */,
 				551BE91020F623A100EE3A1D /* ViewController.swift */,
+				55AB023D20F777FB004F3EE7 /* DetalheViewController.swift */,
+				55AB023F20F789FC004F3EE7 /* DetalheSenhaViewController.swift */,
 				551BE91220F623A100EE3A1D /* Main.storyboard */,
+				55AB023C20F775AA004F3EE7 /* Suppoting Files */,
+			);
+			path = Treinamento;
+			sourceTree = "<group>";
+		};
+		55AB023C20F775AA004F3EE7 /* Suppoting Files */ = {
+			isa = PBXGroup;
+			children = (
 				551BE91520F623A300EE3A1D /* Assets.xcassets */,
 				551BE91720F623A300EE3A1D /* LaunchScreen.storyboard */,
 				551BE91A20F623A300EE3A1D /* Info.plist */,
 			);
-			path = Treinamento;
+			path = "Suppoting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55AB024020F789FC004F3EE7 /* DetalheSenhaViewController.swift in Sources */,
 				551BE91120F623A100EE3A1D /* ViewController.swift in Sources */,
 				551BE90F20F623A100EE3A1D /* AppDelegate.swift in Sources */,
+				55AB023E20F777FB004F3EE7 /* DetalheViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53UTSLXRU6;
-				INFOPLIST_FILE = Treinamento/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Treinamento/Suppoting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53UTSLXRU6;
-				INFOPLIST_FILE = Treinamento/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Treinamento/Suppoting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
