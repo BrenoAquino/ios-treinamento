@@ -16,6 +16,16 @@ Projeto com a configuração de uma TableView simples. Foi utilizado uma cell de
 - Postman: https://www.getpostman.com/apps
 - Realm Studio: https://realm.io/products/realm-studio
 
+## Bibliotecas:
+- Realm: https://realm.io/docs/swift/latest
+- Alamofire: https://github.com/Alamofire/Alamofire
+- ObjectMapper: https://github.com/Hearst-DD/ObjectMapper
+- AlamofireObjectMapper: https://github.com/tristanhimmelman/AlamofireObjectMapper
+- SwiftGen: https://github.com/SwiftGen/SwiftGen
+- Reusable: https://github.com/AliSoftware/Reusable
+- Kingfisher: https://github.com/onevcat/Kingfisher
+- SwiftMessage: https://github.com/SwiftKickMobile/SwiftMessages
+
 ### Links:
 - https://github.com/vsouza/awesome-ios
 - https://github.com/github/gitignore
