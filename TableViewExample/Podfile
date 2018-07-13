@@ -1,0 +1,9 @@
+platform :ios, '10.0'
+
+target 'TableViewExample' do
+  
+  use_frameworks!
+
+  pod 'Reusable'
+
+end

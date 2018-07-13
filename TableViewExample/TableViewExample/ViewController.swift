@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.register(cellType: AppleAndroidTableViewCell.self)
     }
 }
 
@@ -33,11 +34,16 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return 10
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 230
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBasic", for: indexPath)
+        let cell = tableView.dequeueReusableCell(for: indexPath) as AppleAndroidTableViewCell
         
-        cell.textLabel?.text = "Secton: \(indexPath.section) | Row: \(indexPath.row)"
+        cell.compareLabel.text = "x \(indexPath.row) == \(indexPath.row) x"
         
         return cell
     }
