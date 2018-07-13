@@ -3,13 +3,13 @@
 Durante o treinamento de desenvolvimento para iOS do NATI de 2018.2 foram criados diversos projetos. Esse repositório contém todos os projetos desenvolvidos no decorrer do treinamento.
 
 ## Git
-git add .
-git commit -m "Mensagem"
-git push
+`git add .`
+`git commit -m "Mensagem"`
+`git push`
 
 Para add um repositório remoto:
-git remote add origin <URL DO REPO>
-git push -u origin master
+`git remote add origin <URL DO REPO>`
+`git push -u origin master`
 
 ## Projetos
 ### ComandosSwift.playground:
