@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55607D6820FCDEAC00D8105A /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55607D6720FCDEAC00D8105A /* Repo.swift */; };
 		55FF05DD20FCC6D400EC1AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF05DC20FCC6D400EC1AD3 /* AppDelegate.swift */; };
 		55FF05DF20FCC6D400EC1AD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF05DE20FCC6D400EC1AD3 /* ViewController.swift */; };
 		55FF05E220FCC6D400EC1AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FF05E020FCC6D400EC1AD3 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55607D6720FCDEAC00D8105A /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		55FF05D920FCC6D400EC1AD3 /* NetworkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FF05DC20FCC6D400EC1AD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FF05DE20FCC6D400EC1AD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,27 +42,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55607D4220FCC77500D8105A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		55607D4320FCC77900D8105A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		55607D4420FCC77D00D8105A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		55607D4520FCC78300D8105A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,9 +73,7 @@
 			children = (
 				55FF05DC20FCC6D400EC1AD3 /* AppDelegate.swift */,
 				55FF05E020FCC6D400EC1AD3 /* Main.storyboard */,
-				55607D4220FCC77500D8105A /* Model */,
-				55607D4420FCC77D00D8105A /* ViewModel */,
-				55607D4320FCC77900D8105A /* Service */,
+				55607D6720FCDEAC00D8105A /* Repo.swift */,
 				55607D4520FCC78300D8105A /* Controller */,
 				55FF05EE20FCC6FC00EC1AD3 /* Supporting Files */,
 			);
@@ -223,10 +202,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkExample/Pods-NetworkExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -240,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55607D6820FCDEAC00D8105A /* Repo.swift in Sources */,
 				55FF05DF20FCC6D400EC1AD3 /* ViewController.swift in Sources */,
 				55FF05DD20FCC6D400EC1AD3 /* AppDelegate.swift in Sources */,
 			);
