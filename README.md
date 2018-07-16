@@ -2,7 +2,8 @@
 ## Introdução
 Durante o treinamento de desenvolvimento para iOS do NATI de 2018.2 foram criados diversos projetos. Esse repositório contém todos os projetos desenvolvidos no decorrer do treinamento.
 
-## Git
+## Guias Básicos
+### Git:
 Para adicionar todos os arquivos na área de commit: `git add .`
 
 Para commitar (atualizar repósitorio local) todas as alterações escolhidas: `git commit -m "Mensagem do Commit"`
@@ -12,6 +13,20 @@ Para atualizar o repositório remoto com as atualizações no local: `git push`
 Para adicionar um repositório remoto: `git remote add origin <URL DO REPO>`
 
 Para subir atualizações para um repositório sem nenhuma branch (geralmente ao criar): `git push -u origin master`
+
+### Instalações:
+- Instalar Command Line Tools: 
+```shell
+$ xcode-select --install`
+```
+- Instalar o homebrew: 
+```shell
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+```
+- Instalar o cocoapods: 
+```shell
+$ sudo gem install cocoapods
+```
 
 ## Projetos
 ### ComandosSwift.playground:
