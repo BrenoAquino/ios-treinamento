@@ -21,6 +21,9 @@ Projeto de uma tela de Login simples com componentes básicos de layout. Apresen
 ### TableViewExample:
 Projeto com a configuração de uma TableView simples. Foi utilizado uma cell default (basic) com uma label.
 
+### RealmExample:
+Projeto com uma integração simples com o Realm. Foram feitas escritas, leituras de todas as tuplas de uma tabela, leituras filtradas e leituras diretamente de uma tupla (utilizando Primary Key).
+
 ## Referências
 Durante o treinamento foram utilizados diversos recursos. Os links dispostos abaixo fornecem mais informações sobre as ferramentas utilizadas, bibliotecas de terceiros recomendadas e links úteis (repositório com diversas bibliotecas, conjunto de exemplos de .gitignore para diversas linguagens, guia básico de swift e um playground online).
 
