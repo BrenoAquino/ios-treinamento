@@ -24,6 +24,9 @@ Projeto com a configuração de uma TableView simples. Foi utilizado uma cell de
 ### RealmExample:
 Projeto com uma integração simples com o Realm. Foram feitas escritas, leituras de todas as tuplas de uma tabela, leituras filtradas e leituras diretamente de uma tupla (utilizando Primary Key).
 
+### NetworkExample:
+Projeto com a configuração do Alamofire, ObjectMapper e AlamofireObjectMapper. Foi utilizado a API do github (https://developer.github.com/v3/) como instrumento para demostrar o funcionamento dessas bibliotecas.
+
 ## Referências
 Durante o treinamento foram utilizados diversos recursos. Os links dispostos abaixo fornecem mais informações sobre as ferramentas utilizadas, bibliotecas de terceiros recomendadas e links úteis (repositório com diversas bibliotecas, conjunto de exemplos de .gitignore para diversas linguagens, guia básico de swift e um playground online).
 
