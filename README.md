@@ -3,7 +3,9 @@
 Durante o treinamento de desenvolvimento para iOS do NATI de 2018.2 foram criados diversos projetos. Esse repositório contém todos os projetos desenvolvidos no decorrer do treinamento.
 
 ## Guias Básicos
-### Git:
+### Git (básico):
+Para inicializar o versionamento do git em um diretório: `git init`
+
 Para adicionar todos os arquivos na área de commit: `git add .`
 
 Para commitar (atualizar repósitorio local) todas as alterações escolhidas: `git commit -m "Mensagem do Commit"`
@@ -13,6 +15,10 @@ Para atualizar o repositório remoto com as atualizações no local: `git push`
 Para adicionar um repositório remoto: `git remote add origin <URL DO REPO>`
 
 Para subir atualizações para um repositório sem nenhuma branch (geralmente ao criar): `git push -u origin master`
+
+Para atualizar o repositório local com as alterações no remoto: `git pull`
+
+Para descartar todas as alterações: `git stash`
 
 ### Instalações:
 - Instalar Command Line Tools: 
