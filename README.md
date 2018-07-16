@@ -17,7 +17,7 @@ Para subir atualizações para um repositório sem nenhuma branch (geralmente ao
 ### Instalações:
 - Instalar Command Line Tools: 
 ```shell
-$ xcode-select --install`
+$ xcode-select --install
 ```
 - Instalar o homebrew: 
 ```shell
