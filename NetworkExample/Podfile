@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+
+target 'NetworkExample' do
+  
+  use_frameworks!
+
+  pod 'Alamofire'
+
+end
