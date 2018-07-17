@@ -20,6 +20,8 @@ Para atualizar o repositório local com as alterações no remoto: `git pull`
 
 Para descartar todas as alterações: `git stash`
 
+Para clonar de um repositório remoto: `git clone <URL DO REPO>`
+
 ### Instalações:
 - Instalar Command Line Tools: 
 ```shell
