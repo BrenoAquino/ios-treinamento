@@ -1,4 +1,7 @@
-# Treinamento NATI 2018.2
+<p align="center">
+  <img src="Images/nati.png">
+</p>
+   
 ## Introdução
 Durante o treinamento de desenvolvimento para iOS do NATI de 2018.2 foram criados diversos projetos. Esse repositório contém todos os projetos desenvolvidos no decorrer do treinamento.
 
