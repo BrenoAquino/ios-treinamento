@@ -52,6 +52,9 @@ Projeto com uma integração simples com o Realm. Foram feitas escritas, leitura
 ### NetworkExample:
 Projeto com a configuração do Alamofire, ObjectMapper e AlamofireObjectMapper. Foi utilizado a API do github (https://developer.github.com/v3/) como instrumento para demostrar o funcionamento dessas bibliotecas.
 
+### DelegateExample:
+Projeto com a criação de uma view custom utilizado protocolos para callbacks e configurações.
+
 ## Referências
 Durante o treinamento foram utilizados diversos recursos. Os links dispostos abaixo fornecem mais informações sobre as ferramentas utilizadas, bibliotecas de terceiros recomendadas e links úteis (repositório com diversas bibliotecas, conjunto de exemplos de .gitignore para diversas linguagens, guia básico de swift e um playground online).
 
