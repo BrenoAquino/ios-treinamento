@@ -21,6 +21,9 @@ class LoginService {
                 if let user = response.result.value {
                     
                     print("Email \(user.email ?? "") com id \(user.id ?? 0)")
+                    
+                    user.setHeaderParams(header: response.response?.allHeaderFields)
+                    
                 }
                 
             case .failure(let error):

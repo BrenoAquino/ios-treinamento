@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Vars
+    var service: LoginService!
+    
     // MARK: - UI Elemetens
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var email: UITextField!
@@ -20,6 +23,8 @@ class ViewController: UIViewController {
     // MARK: - Life
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.service = LoginService()
         
         self.logo.image = Asset.agendaLogo.image
         
@@ -40,6 +45,10 @@ class ViewController: UIViewController {
     // MARK: - Actions
     @IBAction func logar(_ sender: UIButton) {
         
+        if let email = self.email.text, let senha = self.senha.text {
+            
+            self.service.postLogin(email: email, senha: senha)
+        }
     }
 }
 

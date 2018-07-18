@@ -27,3 +27,25 @@ class User: Mappable {
         self.email  <-  map["email"]
     }
 }
+
+extension User {
+    
+    func setHeaderParams(header: [AnyHashable : Any]?) {
+        
+        guard let header = header else {
+            return
+        }
+        
+        if let uid = header["Uid"] as? String {
+            self.uid = uid
+        }
+        
+        if let client = header["Client"] as? String {
+            self.client = client
+        }
+        
+        if let accessToken = header["Access-Token"] as? String {
+            self.accessToken = accessToken
+        }
+    }
+}
