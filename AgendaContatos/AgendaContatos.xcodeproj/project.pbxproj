@@ -19,6 +19,9 @@
 		55B5AE6C20FF6B8600EE37EB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE6920FF6B8600EE37EB /* Colors.swift */; };
 		55B5AE6D20FF6B8600EE37EB /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE6A20FF6B8600EE37EB /* Localizable.swift */; };
 		55B5AE6F20FF6BC400EE37EB /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE6E20FF6BC400EE37EB /* Assets.swift */; };
+		55B5AE7120FF741D00EE37EB /* LoginRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7020FF741D00EE37EB /* LoginRequestFactory.swift */; };
+		55B5AE7320FF742B00EE37EB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7220FF742B00EE37EB /* LoginService.swift */; };
+		55B5AE7520FF780F00EE37EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7420FF780F00EE37EB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		55B5AE6920FF6B8600EE37EB /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		55B5AE6A20FF6B8600EE37EB /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		55B5AE6E20FF6BC400EE37EB /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		55B5AE7020FF741D00EE37EB /* LoginRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestFactory.swift; sourceTree = "<group>"; };
+		55B5AE7220FF742B00EE37EB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		55B5AE7420FF780F00EE37EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DF039A5C151BAE4020FE7B2E /* Pods-AgendaContatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaContatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +96,7 @@
 		55607D6520FCD99C00D8105A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				55607D5220FCD98500D8105A /* AppDelegate.swift */,
 				5596AD3020FF68930099CEDC /* Supporting Files */,
 			);
 			path = Application;
@@ -110,7 +117,6 @@
 		5596AD3020FF68930099CEDC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				55607D5220FCD98500D8105A /* AppDelegate.swift */,
 				5596AD3220FF68BA0099CEDC /* Generated */,
 				5596AD3120FF68B40099CEDC /* Generators */,
 				5596AD3720FF69160099CEDC /* Launch Screen.storyboard */,
@@ -150,6 +156,7 @@
 		5598C35620FF5E7000DA7DFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55B5AE7420FF780F00EE37EB /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +171,8 @@
 		5598C35820FF5E7D00DA7DFF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				55B5AE7020FF741D00EE37EB /* LoginRequestFactory.swift */,
+				55B5AE7220FF742B00EE37EB /* LoginService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				55607D4B20FCD98500D8105A /* Sources */,
 				55607D4C20FCD98500D8105A /* Frameworks */,
 				55607D4D20FCD98500D8105A /* Resources */,
+				616C10B50C8A2053A7F46E66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,18 +262,36 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftGen;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT\"/SwiftGen/bin/swiftgen strings -t structured-swift3 \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Localizable.strings\" --output \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Localizable.swift\"\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen xcassets -t swift3 \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Assets.xcassets\" --output \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Assets.swift\"\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen colors -t swift3 \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Colors.json\" --output \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Colors.swift\"\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen storyboards -t swift3 \"$PROJECT_DIR/$PROJECT_NAME\" --output \"$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Storyboard.swift\"\n";
+		};
+		616C10B50C8A2053A7F46E66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D54B5A77E6F3D66102EE57A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -292,10 +320,13 @@
 			files = (
 				55607D5520FCD98500D8105A /* ViewController.swift in Sources */,
 				55B5AE6C20FF6B8600EE37EB /* Colors.swift in Sources */,
+				55B5AE7120FF741D00EE37EB /* LoginRequestFactory.swift in Sources */,
 				55B5AE6F20FF6BC400EE37EB /* Assets.swift in Sources */,
 				55B5AE6D20FF6B8600EE37EB /* Localizable.swift in Sources */,
+				55B5AE7520FF780F00EE37EB /* User.swift in Sources */,
 				55B5AE6B20FF6B8600EE37EB /* Storyboard.swift in Sources */,
 				55607D5320FCD98500D8105A /* AppDelegate.swift in Sources */,
+				55B5AE7320FF742B00EE37EB /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

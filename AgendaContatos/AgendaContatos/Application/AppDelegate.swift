@@ -8,6 +8,8 @@
 
 import UIKit
 
+let baseUrl = "https://api-agenda-unifor.herokuapp.com/"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
