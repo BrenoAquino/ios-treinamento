@@ -1,4 +1,7 @@
-# Treinamento NATI 2018.2
+<p align="center">
+  <img src="Images/nati.png">
+</p>
+   
 ## Introdução
 Durante o treinamento de desenvolvimento para iOS do NATI de 2018.2 foram criados diversos projetos. Esse repositório contém todos os projetos desenvolvidos no decorrer do treinamento.
 
@@ -36,6 +39,17 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ sudo gem install cocoapods
 ```
 
+### SwiftGen:
+```shell
+"$PODS_ROOT"/SwiftGen/bin/swiftgen strings -t structured-swift3 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Localizable.strings" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Localizable.swift"
+
+"$PODS_ROOT"/SwiftGen/bin/swiftgen xcassets -t swift3 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Assets.xcassets" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Assets.swift"
+
+"$PODS_ROOT"/SwiftGen/bin/swiftgen colors -t swift3 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Colors.json" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Colors.swift"
+
+"$PODS_ROOT"/SwiftGen/bin/swiftgen storyboards -t swift3 "$PROJECT_DIR/$PROJECT_NAME" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Storyboard.swift"
+```
+
 ## Projetos
 ### ComandosSwift.playground:
 Playground com comandos básicos e introdutórios da linguagem Swift.
@@ -57,6 +71,10 @@ Projeto com a criação de uma view custom utilizado protocolos para callbacks e
 
 ## Referências
 Durante o treinamento foram utilizados diversos recursos. Os links dispostos abaixo fornecem mais informações sobre as ferramentas utilizadas, bibliotecas de terceiros recomendadas e links úteis (repositório com diversas bibliotecas, conjunto de exemplos de .gitignore para diversas linguagens, guia básico de swift e um playground online).
+
+### API:
+- Postman: https://www.getpostman.com/collections/3824a7d4507b0ecc3d27
+- Repositório: https://github.com/neymoura/rails-api-agenda-telefonica
 
 ### Ferramentas:
 - Xcode: https://itunes.apple.com/br/app/xcode/id497799835?mt=12
