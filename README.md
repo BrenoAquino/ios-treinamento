@@ -61,6 +61,10 @@ Projeto com a criação de uma view custom utilizado protocolos para callbacks e
 ## Referências
 Durante o treinamento foram utilizados diversos recursos. Os links dispostos abaixo fornecem mais informações sobre as ferramentas utilizadas, bibliotecas de terceiros recomendadas e links úteis (repositório com diversas bibliotecas, conjunto de exemplos de .gitignore para diversas linguagens, guia básico de swift e um playground online).
 
+### API:
+- Postman: https://www.getpostman.com/collections/3824a7d4507b0ecc3d27
+- Repositório: https://github.com/neymoura/rails-api-agenda-telefonica
+
 ### Ferramentas:
 - Xcode: https://itunes.apple.com/br/app/xcode/id497799835?mt=12
 - Cocoapods: https://cocoapods.org
