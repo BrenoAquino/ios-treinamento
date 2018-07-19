@@ -9,7 +9,19 @@
 import Alamofire
 import AlamofireObjectMapper
 
+protocol LoginServiceDelegate {
+    
+    func postLoginSuccess()
+    func postLoginFailure(error: String)
+}
+
 class LoginService {
+    
+    var delegate: LoginServiceDelegate
+    
+    required init(delegate: LoginServiceDelegate) {
+        self.delegate = delegate
+    }
     
     func postLogin(email: String, senha: String) {
         
@@ -20,15 +32,18 @@ class LoginService {
                 
                 if let user = response.result.value {
                     
-                    print("Email \(user.email ?? "") com id \(user.id ?? 0)")
-                    
                     user.setHeaderParams(header: response.response?.allHeaderFields)
                     
+                    UserViewModel.clear()
+                    
+                    UserViewModel.save(usuario: user)
                 }
+                
+                self.delegate.postLoginSuccess()
                 
             case .failure(let error):
                 
-                print(error.localizedDescription)
+                self.delegate.postLoginFailure(error: error.localizedDescription)
             }
         }
     }

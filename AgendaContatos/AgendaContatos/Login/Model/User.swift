@@ -7,24 +7,31 @@
 //
 
 import ObjectMapper
+import RealmSwift
 
-class User: Mappable {
+class User: Object, Mappable {
     
-    var id: Int?
-    var email: String?
+    var id = RealmOptional<Int>()
+    // Double, Float, Int, Bool -> RealmOpntion<>()
     
-    var accessToken: String?
-    var client: String?
-    var uid: String?
+    @objc dynamic var email: String?
     
-    required init?(map: Map) {
-        
+    @objc dynamic var accessToken: String?
+    @objc dynamic var client: String?
+    @objc dynamic var uid: String?
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
     
     func mapping(map: Map) {
         
-        self.id     <-  map["id"]
-        self.email  <-  map["email"]
+        self.id.value   <-  map["id"]
+        self.email      <-  map["email"]
     }
 }
 

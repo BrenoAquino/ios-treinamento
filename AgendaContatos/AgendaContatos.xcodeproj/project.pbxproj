@@ -22,6 +22,7 @@
 		55B5AE7120FF741D00EE37EB /* LoginRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7020FF741D00EE37EB /* LoginRequestFactory.swift */; };
 		55B5AE7320FF742B00EE37EB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7220FF742B00EE37EB /* LoginService.swift */; };
 		55B5AE7520FF780F00EE37EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7420FF780F00EE37EB /* User.swift */; };
+		55FD81932100AFDB00A40AF9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81922100AFDB00A40AF9 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		55B5AE7020FF741D00EE37EB /* LoginRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestFactory.swift; sourceTree = "<group>"; };
 		55B5AE7220FF742B00EE37EB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		55B5AE7420FF780F00EE37EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		55FD81922100AFDB00A40AF9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DF039A5C151BAE4020FE7B2E /* Pods-AgendaContatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaContatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 		5598C35720FF5E7500DA7DFF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				55FD81922100AFDB00A40AF9 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				55607D5520FCD98500D8105A /* ViewController.swift in Sources */,
 				55B5AE6C20FF6B8600EE37EB /* Colors.swift in Sources */,
 				55B5AE7120FF741D00EE37EB /* LoginRequestFactory.swift in Sources */,
+				55FD81932100AFDB00A40AF9 /* UserViewModel.swift in Sources */,
 				55B5AE6F20FF6BC400EE37EB /* Assets.swift in Sources */,
 				55B5AE6D20FF6B8600EE37EB /* Localizable.swift in Sources */,
 				55B5AE7520FF780F00EE37EB /* User.swift in Sources */,

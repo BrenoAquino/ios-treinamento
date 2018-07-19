@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.service = LoginService()
+        self.service = LoginService(delegate: self)
         
         self.logo.image = Asset.agendaLogo.image
         
@@ -52,3 +52,15 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: LoginServiceDelegate {
+    
+    func postLoginSuccess() {
+        
+        print("Olha o baco ae")
+    }
+    
+    func postLoginFailure(error: String) {
+        
+        print(error)
+    }
+}
