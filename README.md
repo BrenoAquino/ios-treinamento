@@ -39,15 +39,15 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ sudo gem install cocoapods
 ```
 
-### SwiftGen:
+### SwiftGen Script:
 ```shell
-"$PODS_ROOT"/SwiftGen/bin/swiftgen strings -t structured-swift3 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Localizable.strings" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Localizable.swift"
+"$PODS_ROOT"/SwiftGen/bin/swiftgen strings -t structured-swift4 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Localizable.strings" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Localizable.swift"
 
-"$PODS_ROOT"/SwiftGen/bin/swiftgen xcassets -t swift3 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Assets.xcassets" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Assets.swift"
+"$PODS_ROOT"/SwiftGen/bin/swiftgen xcassets -t swift4 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Assets.xcassets" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Assets.swift"
 
-"$PODS_ROOT"/SwiftGen/bin/swiftgen colors -t swift3 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Colors.json" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Colors.swift"
+"$PODS_ROOT"/SwiftGen/bin/swiftgen colors -t swift4 "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generators/Colors.json" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Colors.swift"
 
-"$PODS_ROOT"/SwiftGen/bin/swiftgen storyboards -t swift3 "$PROJECT_DIR/$PROJECT_NAME" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Storyboard.swift"
+"$PODS_ROOT"/SwiftGen/bin/swiftgen storyboards -t swift4 "$PROJECT_DIR/$PROJECT_NAME" --output "$PROJECT_DIR/$PROJECT_NAME/Application/Supporting Files/Generated/Storyboard.swift"
 ```
 
 ## Projetos
