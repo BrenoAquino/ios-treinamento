@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		332CF1D65B8084794649A1C3 /* Pods_AgendaContatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA3BA82DF4087043BE0CF05 /* Pods_AgendaContatos.framework */; };
 		55607D5320FCD98500D8105A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55607D5220FCD98500D8105A /* AppDelegate.swift */; };
-		55607D5520FCD98500D8105A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55607D5420FCD98500D8105A /* ViewController.swift */; };
+		55607D5520FCD98500D8105A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55607D5420FCD98500D8105A /* LoginViewController.swift */; };
 		55607D5820FCD98500D8105A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55607D5620FCD98500D8105A /* Main.storyboard */; };
 		5596AD3520FF690D0099CEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5596AD3320FF690D0099CEDC /* Localizable.strings */; };
 		5596AD3620FF690D0099CEDC /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 5596AD3420FF690D0099CEDC /* Colors.json */; };
@@ -29,6 +29,7 @@
 		55FD81A02100C5AD00A40AF9 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD819F2100C5AD00A40AF9 /* Contato.swift */; };
 		55FD81A22100C99A00A40AF9 /* ContatoRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81A12100C99A00A40AF9 /* ContatoRequestFactory.swift */; };
 		55FD81A42100C9B900A40AF9 /* ContatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81A32100C9B900A40AF9 /* ContatoService.swift */; };
+		55FD81A62100D07100A40AF9 /* ContatosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81A52100D07100A40AF9 /* ContatosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,7 @@
 		1A0E7515B5D27C52CE81BD0D /* Pods-AgendaContatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaContatos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos.debug.xcconfig"; sourceTree = "<group>"; };
 		55607D4F20FCD98500D8105A /* AgendaContatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaContatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55607D5220FCD98500D8105A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55607D5420FCD98500D8105A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55607D5420FCD98500D8105A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		55607D5720FCD98500D8105A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5596AD3320FF690D0099CEDC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5596AD3420FF690D0099CEDC /* Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		55FD819F2100C5AD00A40AF9 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		55FD81A12100C99A00A40AF9 /* ContatoRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoRequestFactory.swift; sourceTree = "<group>"; };
 		55FD81A32100C9B900A40AF9 /* ContatoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoService.swift; sourceTree = "<group>"; };
+		55FD81A52100D07100A40AF9 /* ContatosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewModel.swift; sourceTree = "<group>"; };
 		DF039A5C151BAE4020FE7B2E /* Pods-AgendaContatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaContatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +166,7 @@
 		5598C35520FF5E4C00DA7DFF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				55607D5420FCD98500D8105A /* ViewController.swift */,
+				55607D5420FCD98500D8105A /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,6 +219,7 @@
 		55FD819A2100C49400A40AF9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				55FD81A52100D07100A40AF9 /* ContatosViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -384,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55607D5520FCD98500D8105A /* ViewController.swift in Sources */,
+				55607D5520FCD98500D8105A /* LoginViewController.swift in Sources */,
 				55FD81A22100C99A00A40AF9 /* ContatoRequestFactory.swift in Sources */,
 				55B5AE6C20FF6B8600EE37EB /* Colors.swift in Sources */,
 				55B5AE7120FF741D00EE37EB /* LoginRequestFactory.swift in Sources */,
@@ -393,6 +396,7 @@
 				55FD819E2100C4E700A40AF9 /* ContatosViewController.swift in Sources */,
 				55B5AE6D20FF6B8600EE37EB /* Localizable.swift in Sources */,
 				55FD81952100C2C600A40AF9 /* SessionControl.swift in Sources */,
+				55FD81A62100D07100A40AF9 /* ContatosViewModel.swift in Sources */,
 				55B5AE7520FF780F00EE37EB /* User.swift in Sources */,
 				55B5AE6B20FF6B8600EE37EB /* Storyboard.swift in Sources */,
 				55FD81A02100C5AD00A40AF9 /* Contato.swift in Sources */,

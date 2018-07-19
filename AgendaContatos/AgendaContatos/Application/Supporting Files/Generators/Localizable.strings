@@ -5,3 +5,5 @@
 "login.entrar" = "Login";
 "login.email" = "Email";
 "login.senha" = "Senha";
+
+"contatos.title" = "Contatos";

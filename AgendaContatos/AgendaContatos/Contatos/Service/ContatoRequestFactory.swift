@@ -10,5 +10,8 @@ import Alamofire
 
 class ContatoRequestFactory {
     
-//    static func getContatos() -> DataRequest
+    static func getContatos() -> DataRequest {
+        
+        return Alamofire.request(baseUrl + "contacts", method: .get, headers: header)
+    }
 }

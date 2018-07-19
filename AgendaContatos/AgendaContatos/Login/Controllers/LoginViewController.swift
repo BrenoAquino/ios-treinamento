@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     // MARK: - Vars
     var service: LoginService!
@@ -52,11 +52,11 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: LoginServiceDelegate {
+extension LoginViewController: LoginServiceDelegate {
     
     func postLoginSuccess() {
         
-        print("Olha o baco ae")
+        self.perform(segue: StoryboardSegue.Main.segueEntrar)
     }
     
     func postLoginFailure(error: String) {

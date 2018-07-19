@@ -13,6 +13,11 @@ internal enum L10n {
     internal static let title = L10n.tr("Localizable", "app.title")
   }
 
+  internal enum Contatos {
+    /// Contatos
+    internal static let title = L10n.tr("Localizable", "contatos.title")
+  }
+
   internal enum Login {
     /// Cadastrar
     internal static let cadastrar = L10n.tr("Localizable", "login.cadastrar")

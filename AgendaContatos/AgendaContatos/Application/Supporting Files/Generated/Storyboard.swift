@@ -52,6 +52,8 @@ internal extension UIViewController {
 internal enum StoryboardScene {
   internal enum Contatos: StoryboardType {
     internal static let storyboardName = "Contatos"
+
+    internal static let initialScene = InitialSceneType<UINavigationController>(storyboard: Contatos.self)
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "Launch Screen"
@@ -61,11 +63,14 @@ internal enum StoryboardScene {
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
-    internal static let initialScene = InitialSceneType<AgendaContatos.ViewController>(storyboard: Main.self)
+    internal static let initialScene = InitialSceneType<AgendaContatos.LoginViewController>(storyboard: Main.self)
   }
 }
 
 internal enum StoryboardSegue {
+  internal enum Main: String, SegueType {
+    case segueEntrar
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 
