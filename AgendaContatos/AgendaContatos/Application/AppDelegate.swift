@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print(Realm.Configuration.defaultConfiguration.fileURL?.absoluteString ?? "Não Criado")
         
+        SessionControl.setHeadersParams()
+        
         return true
     }
 

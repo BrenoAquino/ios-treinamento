@@ -23,6 +23,12 @@
 		55B5AE7320FF742B00EE37EB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7220FF742B00EE37EB /* LoginService.swift */; };
 		55B5AE7520FF780F00EE37EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5AE7420FF780F00EE37EB /* User.swift */; };
 		55FD81932100AFDB00A40AF9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81922100AFDB00A40AF9 /* UserViewModel.swift */; };
+		55FD81952100C2C600A40AF9 /* SessionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81942100C2C600A40AF9 /* SessionControl.swift */; };
+		55FD81982100C45300A40AF9 /* Contatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FD81972100C45300A40AF9 /* Contatos.storyboard */; };
+		55FD819E2100C4E700A40AF9 /* ContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD819D2100C4E700A40AF9 /* ContatosViewController.swift */; };
+		55FD81A02100C5AD00A40AF9 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD819F2100C5AD00A40AF9 /* Contato.swift */; };
+		55FD81A22100C99A00A40AF9 /* ContatoRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81A12100C99A00A40AF9 /* ContatoRequestFactory.swift */; };
+		55FD81A42100C9B900A40AF9 /* ContatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FD81A32100C9B900A40AF9 /* ContatoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		55B5AE7220FF742B00EE37EB /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		55B5AE7420FF780F00EE37EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		55FD81922100AFDB00A40AF9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		55FD81942100C2C600A40AF9 /* SessionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionControl.swift; sourceTree = "<group>"; };
+		55FD81972100C45300A40AF9 /* Contatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contatos.storyboard; sourceTree = "<group>"; };
+		55FD819D2100C4E700A40AF9 /* ContatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewController.swift; sourceTree = "<group>"; };
+		55FD819F2100C5AD00A40AF9 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		55FD81A12100C99A00A40AF9 /* ContatoRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoRequestFactory.swift; sourceTree = "<group>"; };
+		55FD81A32100C9B900A40AF9 /* ContatoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoService.swift; sourceTree = "<group>"; };
 		DF039A5C151BAE4020FE7B2E /* Pods-AgendaContatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgendaContatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgendaContatos/Pods-AgendaContatos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +103,7 @@
 			children = (
 				55607D6520FCD99C00D8105A /* Application */,
 				55607D6620FCD9AC00D8105A /* Login */,
+				55FD81962100C43600A40AF9 /* Contatos */,
 			);
 			path = AgendaContatos;
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				55607D5220FCD98500D8105A /* AppDelegate.swift */,
+				55FD81942100C2C600A40AF9 /* SessionControl.swift */,
 				5596AD3020FF68930099CEDC /* Supporting Files */,
 			);
 			path = Application;
@@ -180,6 +194,50 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		55FD81962100C43600A40AF9 /* Contatos */ = {
+			isa = PBXGroup;
+			children = (
+				55FD81972100C45300A40AF9 /* Contatos.storyboard */,
+				55FD81992100C48B00A40AF9 /* Model */,
+				55FD819A2100C49400A40AF9 /* ViewModel */,
+				55FD819B2100C4A500A40AF9 /* Service */,
+				55FD819C2100C4A900A40AF9 /* Controllers */,
+			);
+			path = Contatos;
+			sourceTree = "<group>";
+		};
+		55FD81992100C48B00A40AF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55FD819F2100C5AD00A40AF9 /* Contato.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55FD819A2100C49400A40AF9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55FD819B2100C4A500A40AF9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				55FD81A12100C99A00A40AF9 /* ContatoRequestFactory.swift */,
+				55FD81A32100C9B900A40AF9 /* ContatoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		55FD819C2100C4A900A40AF9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				55FD819D2100C4E700A40AF9 /* ContatosViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5C0D12D90BAE17F101B0A38A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5596AD3A20FF693A0099CEDC /* Assets.xcassets in Resources */,
+				55FD81982100C45300A40AF9 /* Contatos.storyboard in Resources */,
 				55607D5820FCD98500D8105A /* Main.storyboard in Resources */,
 				5596AD3520FF690D0099CEDC /* Localizable.strings in Resources */,
 				5596AD3820FF69160099CEDC /* Launch Screen.storyboard in Resources */,
@@ -326,13 +385,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				55607D5520FCD98500D8105A /* ViewController.swift in Sources */,
+				55FD81A22100C99A00A40AF9 /* ContatoRequestFactory.swift in Sources */,
 				55B5AE6C20FF6B8600EE37EB /* Colors.swift in Sources */,
 				55B5AE7120FF741D00EE37EB /* LoginRequestFactory.swift in Sources */,
 				55FD81932100AFDB00A40AF9 /* UserViewModel.swift in Sources */,
 				55B5AE6F20FF6BC400EE37EB /* Assets.swift in Sources */,
+				55FD819E2100C4E700A40AF9 /* ContatosViewController.swift in Sources */,
 				55B5AE6D20FF6B8600EE37EB /* Localizable.swift in Sources */,
+				55FD81952100C2C600A40AF9 /* SessionControl.swift in Sources */,
 				55B5AE7520FF780F00EE37EB /* User.swift in Sources */,
 				55B5AE6B20FF6B8600EE37EB /* Storyboard.swift in Sources */,
+				55FD81A02100C5AD00A40AF9 /* Contato.swift in Sources */,
+				55FD81A42100C9B900A40AF9 /* ContatoService.swift in Sources */,
 				55607D5320FCD98500D8105A /* AppDelegate.swift in Sources */,
 				55B5AE7320FF742B00EE37EB /* LoginService.swift in Sources */,
 			);

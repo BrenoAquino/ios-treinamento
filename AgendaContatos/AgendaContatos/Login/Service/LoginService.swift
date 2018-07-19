@@ -32,11 +32,11 @@ class LoginService {
                 
                 if let user = response.result.value {
                     
-                    user.setHeaderParams(header: response.response?.allHeaderFields)
-                    
                     UserViewModel.clear()
                     
                     UserViewModel.save(usuario: user)
+                    
+                    SessionControl.setHeadersParams(headers: response.response?.allHeaderFields)
                 }
                 
                 self.delegate.postLoginSuccess()
